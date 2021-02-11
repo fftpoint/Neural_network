@@ -3,7 +3,6 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 import numpy as np
-#import matplotlib.pyplot as plt 
 
 # 学習回数
 epochs=100
@@ -17,8 +16,6 @@ input_data = x  / x.max()
 # input_data = (x - x.mean()) / x.std()
 training_data = 4 * input_data ** 3 - 2 * input_data
 # training_data = (y - y.min()) / (y.max() - y.min())
-# print(x)
-# print(input_data)
 
 """
 # 教師データグラフ出力
@@ -54,7 +51,6 @@ history = model.fit(
     epochs=epochs,
     # validation_data = (input_data,training_data)
 )
-# history.history
 
 # 検証
 print("Evaluate on test data")
