@@ -18,3 +18,7 @@ RUN python3 -m pip install --upgrade \
 # Add User
 RUN useradd -m test
 USER test
+
+# Placing the program
+WORKDIR /home/test
+COPY nn-hidden_sigmoid.py .
