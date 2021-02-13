@@ -73,5 +73,5 @@ plt.xlabel('x')
 plt.ylabel('y')
 plt.savefig('images/result-epochs_' + str(epochs) +'-num_hidden_' + str(num_hidden) + '.png')
 plt.legend(loc = 'best')
-plt.show
+plt.show()
 
