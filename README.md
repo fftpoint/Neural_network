@@ -1,6 +1,6 @@
 ## 目的
-* ニューラルネットワークで線形回帰を行う
-* **M1 Macでは実行できません**
+* Performing Linear Regression with Neural Networks.
+* **Cannot run on a M1 Mac.**
 
 ## Quick Start
 1. Install Git and Docker on your computer.
