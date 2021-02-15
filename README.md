@@ -1,5 +1,5 @@
 ## Purpose
-* Performing Linear Regression with Neural Networks.
+* Performing Nonlinear Regression with Neural Networks.
 * **Cannot run on a M1 Mac.**
 
 ## Quick Start
