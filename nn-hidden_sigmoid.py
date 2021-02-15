@@ -15,11 +15,13 @@ num_hidden = 3
 # データ生成
 x = np.arange(-10, 10, 0.1) 
 
-input_data = x  / x.max() #  
-# 正規化
+# -1~1の正規化
+input_data = x  / x.max()
+# min-max normalization
 # input_data = (x - x.min()) / (x.max() - x.min())
-# 標準化
+# z-score normalization (標準化)
 # input_data = (x - x.mean()) / x.std() 
+
 # 目標関数
 training_data = 4 * input_data ** 3 - 2 * input_data 
 
