@@ -27,5 +27,5 @@ python ./nn-hidden_sigmoid.py
 7. Let's check the results. The images will also be saved in the images directory.
 
 ## Task
-- [x] Change the number of learning (epochs).
-- [x] Change the number of units in the hidden layer(num_hidden).
+- [x] Change the number of learning (**epochs**).
+- [x] Change the number of units in the hidden layer (**num_hidden**).
