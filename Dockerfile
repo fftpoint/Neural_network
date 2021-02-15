@@ -22,3 +22,4 @@ USER test
 # Placing the program
 WORKDIR /home/test
 COPY nn-hidden_sigmoid.py .
+RUN mkdir ./images

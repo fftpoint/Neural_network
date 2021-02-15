@@ -5,18 +5,23 @@ from tensorflow.keras import layers
 import numpy as np
 import matplotlib.pyplot as plt 
 
+# ------変更可能な変数--------
 # 学習回数
 epochs=100
 # 中間層ユニット数
 num_hidden = 3
+# ----------------------------
 
 # データ生成
 x = np.arange(-10, 10, 0.1) 
 
-input_data = x  / x.max() # 
-# input_data = (x - x.min()) / (x.max() - x.min()) # 正規化
-# input_data = (x - x.mean()) / x.std() # 標準化
-training_data = 4 * input_data ** 3 - 2 * input_data # 目標関数
+input_data = x  / x.max() #  
+# 正規化
+# input_data = (x - x.min()) / (x.max() - x.min())
+# 標準化
+# input_data = (x - x.mean()) / x.std() 
+# 目標関数
+training_data = 4 * input_data ** 3 - 2 * input_data 
 
 # 教師データグラフ出力
 plt.title('train_data')
@@ -61,7 +66,7 @@ plt.plot(history.history['loss'])
 plt.title('model loss')
 plt.xlabel('epoch')
 plt.ylabel('loss')
-plt.savefig('images/model_loss-epochs_' + str(epochs) +'-num_hidden_' + str(num_hidden) + '.png')
+plt.savefig('./images/model_loss-epochs_' + str(epochs) +'-num_hidden_' + str(num_hidden) + '.png')
 plt.show()
 
 
@@ -71,7 +76,7 @@ plt.plot(input_data, training_data, linestyle="dashed", label="training_data")
 plt.plot(input_data, results, marker="+", label="results")
 plt.xlabel('x')
 plt.ylabel('y')
-plt.savefig('images/result-epochs_' + str(epochs) +'-num_hidden_' + str(num_hidden) + '.png')
+plt.savefig('./images/result-epochs_' + str(epochs) +'-num_hidden_' + str(num_hidden) + '.png')
 plt.legend(loc = 'best')
 plt.show()
 
