@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 epochs=100
 # 中間層ユニット数
 num_hidden = 3
-# ----------------------------
+# --------------------------
 
 # データ生成
 x = np.arange(-10, 10, 0.1) 
