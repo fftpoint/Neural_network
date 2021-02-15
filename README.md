@@ -1,7 +1,7 @@
 # 目的
 * ニューラルネットワークで線形回帰を行う
-* <span style="color: red; ">M1 Macでは実行できません</span>
-<br>
+* **M1 Macでは実行できません**
+
 # Quick Start
 1. Install Git and Docker on your computer.
 2. Clone the repository:
@@ -25,7 +25,7 @@ $ docker run -it tensorflow:0.1 bash
 python ./nn-hidden_sigmoid.py
 ```
 7. Let's check the results. The images will also be saved in the images directory.
-<br>
+
 # Task
-* **Change the number of learning (epochs).**
-* **Change the number of units in the hidden layer(num_hidden).**
+- [ ] Change the number of learning (epochs).
+- [ ] Change the number of units in the hidden layer(num_hidden).**
