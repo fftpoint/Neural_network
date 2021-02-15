@@ -1,8 +1,8 @@
-# 目的
+## 目的
 * ニューラルネットワークで線形回帰を行う
 * **M1 Macでは実行できません**
 
-# Quick Start
+## Quick Start
 1. Install Git and Docker on your computer.
 2. Clone the repository:
 ```shell
@@ -26,6 +26,6 @@ python ./nn-hidden_sigmoid.py
 ```
 7. Let's check the results. The images will also be saved in the images directory.
 
-# Task
+## Task
 - [ ] Change the number of learning (epochs).
-- [ ] Change the number of units in the hidden layer(num_hidden).**
+- [ ] Change the number of units in the hidden layer(num_hidden).
